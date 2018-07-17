@@ -116,8 +116,12 @@ def spamTest():
     for i in range(10):  # 随机选取十封邮件为测试集
         randIndex = int(random.uniform(0,len(trainingSet)))
         testSet.append(trainingSet[randIndex])
+<<<<<<< HEAD
         #del(trainingSet[randIndex])  # 删除指定值得元素 li = [1,2,4,5]  li.remove(4)  # li = [1,2,5]
         trainingSet.remove(trainingSet[randIndex])
+=======
+        del(trainingSet[randIndex])  # 删除指定值得元素 li = [1,2,4,5]  li.remove(4)  # li = [1,2,5]
+>>>>>>> 5986603ff9cfdec0dcae45710e53929bbf9e0a2f
     trainMat = []
     trainClasses = []
     for docIndex in trainingSet: 
